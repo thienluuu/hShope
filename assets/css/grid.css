@@ -1,0 +1,49 @@
+.grid {
+    width: 1680px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid__full-width {
+    width: 100%;
+}
+.row {
+    display:flex;
+    flex-wrap: wrap;  
+}
+.col-2 {
+    width: 16.6667%;
+    flex: 1;
+
+}
+.col-10 {
+    width: 83.3334%;
+}
+.col-2-5 {
+    width: 20%;
+}
+
+@media (max-width:1023px) and (min-width:740px) {
+    .wide{
+    width: 640px; 
+    }
+    .col-2-3 {
+        width: 33.3334%;
+    }
+    .col-10 {
+        flex: 1;
+    }
+    .col-2-22 {
+        width: 50%;
+    }
+}
+@media (max-width:739px) { 
+    .col-2-1 {
+        width: 100%;
+    }
+    .col-2-2 {
+        width: 48%;
+    }
+    .col-10 {
+        flex: 1;
+    }
+}
